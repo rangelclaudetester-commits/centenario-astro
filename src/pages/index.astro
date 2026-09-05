@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import CardapioSection from "../components/CardapioSection.astro";
+import BuffetSection from "../components/BuffetSection.astro";
+import KidsSection from "../components/KidsSection.astro";
+import FotosSection from "../components/FotosSection.astro";
+import AvaliacoesSection from "../components/AvaliacoesSection.astro";
+import SobreSection from "../components/SobreSection.astro";
+import VisitaSection from "../components/VisitaSection.astro";
+import Footer from "../components/Footer.astro";
+import Sacola from "../components/Sacola.astro";
+---
+
+<BaseLayout
+  title="Restaurante & Grill Centenário — Buffet e Marmitas em Sapiranga/RS"
+  description="Buffet livre e a quilo, comida caseira e grelhados há 17 anos em Sapiranga/RS. Segunda a sábado, 11h às 13h30. Marmitas e tele-entrega pelo WhatsApp."
+>
+  <p class="aviso-topo" id="aviso-topo" role="status" hidden></p>
+
+  <Header />
+
+  <main id="conteudo">
+    <Hero />
+    <CardapioSection />
+    <BuffetSection />
+    <KidsSection />
+    <FotosSection />
+    <AvaliacoesSection />
+    <SobreSection />
+    <VisitaSection />
+  </main>
+
+  <Footer />
+  <Sacola />
+
+  <script src="/script.js" defer></script>
+</BaseLayout>

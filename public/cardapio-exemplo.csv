@@ -1,0 +1,77 @@
+categoria,nome,descricao,tamanho,preco,disponivel,dia
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa e molho",P,20,sim,segunda
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa e molho",M,30,sim,segunda
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa e molho",G,40,sim,segunda
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa e molho",P,25,sim,segunda
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa e molho",M,35,sim,segunda
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa e molho",G,50,sim,segunda
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa e molho",P,30,sim,segunda
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa e molho",M,45,sim,segunda
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa e molho",G,60,sim,segunda
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",P,20,sim,terca
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",M,30,sim,terca
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",G,40,sim,terca
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",P,25,sim,terca
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",M,35,sim,terca
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",G,50,sim,terca
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",P,30,sim,terca
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",M,45,sim,terca
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, batata a vapor ou purê e molho",G,60,sim,terca
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, polenta mole e molho",P,20,sim,quarta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, polenta mole e molho",M,30,sim,quarta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, polenta mole e molho",G,40,sim,quarta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, polenta mole e molho",P,25,sim,quarta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, polenta mole e molho",M,35,sim,quarta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, polenta mole e molho",G,50,sim,quarta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, polenta mole e molho",P,30,sim,quarta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, polenta mole e molho",M,45,sim,quarta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, polenta mole e molho",G,60,sim,quarta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",P,20,sim,quinta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",M,30,sim,quinta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",G,40,sim,quinta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",P,25,sim,quinta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",M,35,sim,quinta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",G,50,sim,quinta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",P,30,sim,quinta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",M,45,sim,quinta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, purê, molho e polenta frita",G,60,sim,quinta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa, molho e batata frita",P,20,sim,sexta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa, molho e batata frita",M,30,sim,sexta
+Prato do dia,Frango,"Saladas variadas, arroz, feijão, massa, molho e batata frita",G,40,sim,sexta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa, molho e batata frita",P,25,sim,sexta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa, molho e batata frita",M,35,sim,sexta
+Prato do dia,Gado,"Saladas variadas, arroz, feijão, massa, molho e batata frita",G,50,sim,sexta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa, molho e batata frita",P,30,sim,sexta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa, molho e batata frita",M,45,sim,sexta
+Prato do dia,Peixe,"Saladas variadas, arroz, feijão, massa, molho e batata frita",G,60,sim,sexta
+Prato Fitness,Frango,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",P,25,sim,
+Prato Fitness,Frango,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",M,35,sim,
+Prato Fitness,Frango,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",G,50,sim,
+Prato Fitness,Gado,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",P,30,sim,
+Prato Fitness,Gado,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",M,40,sim,
+Prato Fitness,Gado,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",G,60,sim,
+Prato Fitness,Peixe,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",P,40,sim,
+Prato Fitness,Peixe,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",M,60,sim,
+Prato Fitness,Peixe,"Saladas variadas, arroz integral, feijão, batata doce e opções de carne",G,80,sim,
+À la minuta,Frango,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",P,25,sim,
+À la minuta,Frango,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",M,35,sim,
+À la minuta,Frango,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",G,50,sim,
+À la minuta,Gado,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",P,30,sim,
+À la minuta,Gado,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",M,40,sim,
+À la minuta,Gado,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",G,60,sim,
+À la minuta,Peixe,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",P,40,sim,
+À la minuta,Peixe,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",M,60,sim,
+À la minuta,Peixe,"Saladas, arroz, feijão, batata frita, ovo frito e bife da sua escolha",G,80,sim,
+Adicional,Frango,,,9,sim,
+Adicional,Gado,,,10,sim,
+Adicional,Alho e óleo,,,3,sim,
+Adicional,Cebola,,,3,sim,
+Adicional,Ovo frito,,,3,sim,
+Adicional,Queijo,,,5,sim,
+Adicional,Saladas,,,5,sim,
+Adicional,Arroz (300g),,,6,sim,
+Adicional,Feijão (300g),,,6,sim,
+Adicional,Fritas (150g),,,6,sim,
+Adicional,Milanesa,,,15,sim,
+Adicional,Parmegiana,,,18,sim,
+Adicional,Peixe,,,20,sim,

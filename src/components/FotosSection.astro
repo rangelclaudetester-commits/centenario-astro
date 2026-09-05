@@ -1,0 +1,100 @@
+<section class="secao secao--fotos" id="fotos" aria-labelledby="t-fotos">
+  <div class="wrap">
+    <h2 class="secao__titulo" id="t-fotos">O restaurante por dentro</h2>
+    <p class="secao__intro">
+      Fotos do Perfil da Empresa no Google, enquanto não chegam fotos novas direto do restaurante.
+    </p>
+
+    <ul class="galeria" id="galeria">
+      <li>
+        <figure>
+          <button type="button" class="galeria__abrir" data-full="/imagens/galeria-fachada-dia-1200.jpg">
+            <picture>
+              <source type="image/webp" srcset="/imagens/galeria-fachada-dia-640.webp" />
+              <img
+                src="/imagens/galeria-fachada-dia-640.jpg"
+                width="640"
+                height="480"
+                loading="lazy"
+                alt="Fachada do Restaurante & Grill Centenário de dia, com as mesas visíveis pela vitrine."
+              />
+            </picture>
+          </button>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <button type="button" class="galeria__abrir" data-full="/imagens/galeria-fachada-1200.jpg">
+            <picture>
+              <source type="image/webp" srcset="/imagens/galeria-fachada-640.webp" />
+              <img
+                src="/imagens/galeria-fachada-640.jpg"
+                width="640"
+                height="480"
+                loading="lazy"
+                alt="Fachada do Restaurante & Grill Centenário à noite, com iluminação verde."
+              />
+            </picture>
+          </button>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <button type="button" class="galeria__abrir" data-full="/imagens/galeria-espetos-1200.jpg">
+            <picture>
+              <source type="image/webp" srcset="/imagens/galeria-espetos-640.webp" />
+              <img
+                src="/imagens/galeria-espetos-640.jpg"
+                width="640"
+                height="480"
+                loading="lazy"
+                alt="Espetos de carnes grelhadas na grade do restaurante."
+              />
+            </picture>
+          </button>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <button type="button" class="galeria__abrir" data-full="/imagens/galeria-moranga-1200.jpg">
+            <picture>
+              <source type="image/webp" srcset="/imagens/galeria-moranga-640.webp" />
+              <img
+                src="/imagens/galeria-moranga-640.jpg"
+                width="640"
+                height="480"
+                loading="lazy"
+                alt="Camarão na moranga e petiscos fritos no buffet de fim de semana."
+              />
+            </picture>
+          </button>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <button type="button" class="galeria__abrir" data-full="/imagens/galeria-sobremesas-1200.jpg">
+            <picture>
+              <source type="image/webp" srcset="/imagens/galeria-sobremesas-640.webp" />
+              <img
+                src="/imagens/galeria-sobremesas-640.jpg"
+                width="640"
+                height="480"
+                loading="lazy"
+                alt="Mesa de sobremesas do buffet: torta de limão, mousse de chocolate e geleia."
+              />
+            </picture>
+          </button>
+        </figure>
+      </li>
+    </ul>
+
+    <p class="galeria__vazia falta" id="galeria-vazia" hidden>
+      As fotos entram assim que o restaurante liberar as imagens.
+    </p>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button class="lightbox__fechar" id="lightbox-fechar" type="button" aria-label="Fechar foto">&times;</button>
+  <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+</div>

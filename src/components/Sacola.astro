@@ -1,0 +1,63 @@
+<div class="sacola-backdrop" id="sacola-backdrop" hidden></div>
+<div class="sacola" id="sacola" hidden>
+  <div class="wrap sacola__linha">
+    <div class="sacola__resumo">
+      <span id="sacola-contagem">0 itens</span>
+      <span class="sacola__subtotal" id="sacola-subtotal"></span>
+    </div>
+    <button class="btn btn--fantasma sacola__ver" type="button" id="sacola-toggle" aria-expanded="false" aria-controls="sacola-detalhe">
+      Ver carrinho
+    </button>
+  </div>
+
+  <div class="sacola__detalhe" id="sacola-detalhe" hidden>
+    <div class="wrap">
+      <div class="sacola__detalhe-cabecalho">
+        <h2 class="sacola__detalhe-titulo">Seu pedido</h2>
+        <button type="button" class="sacola__fechar" id="sacola-fechar" aria-label="Fechar carrinho">×</button>
+      </div>
+
+      <ul class="sacola__itens" id="sacola-itens"></ul>
+
+      <button type="button" class="sacola__continuar" id="sacola-continuar">Continuar escolhendo</button>
+
+      <div class="sacola__campo">
+        <label for="sac-nome">Seu nome</label>
+        <input type="text" id="sac-nome" autocomplete="name" placeholder="Nome para o pedido" />
+        <p class="sacola__erro" id="erro-nome" hidden>Escreva seu nome para enviar o pedido.</p>
+      </div>
+
+      <fieldset class="sacola__campo">
+        <legend>Como você quer receber?</legend>
+        <label><input type="radio" name="entrega" value="retirada" checked /> Retirar no balcão</label>
+        <label id="op-entrega"><input type="radio" name="entrega" value="entrega" /> Receber em casa</label>
+      </fieldset>
+
+      <div class="sacola__campo" id="campo-endereco" hidden>
+        <label for="sac-endereco">Endereço para entrega</label>
+        <input type="text" id="sac-endereco" autocomplete="street-address" placeholder="Rua, número, bairro" />
+        <label for="sac-referencia">Ponto de referência (opcional)</label>
+        <input type="text" id="sac-referencia" placeholder="Perto de…" />
+        <p class="sacola__erro" id="erro-endereco" hidden>Escreva o endereço para enviar o pedido de entrega.</p>
+      </div>
+
+      <fieldset class="sacola__campo">
+        <legend>Forma de pagamento</legend>
+        <label><input type="radio" name="pagamento" value="Dinheiro" checked /> Dinheiro</label>
+        <label><input type="radio" name="pagamento" value="Pix" /> Pix</label>
+        <label><input type="radio" name="pagamento" value="Débito" /> Débito</label>
+        <label><input type="radio" name="pagamento" value="Crédito" /> Crédito</label>
+      </fieldset>
+
+      <div class="sacola__campo">
+        <label for="sac-obs">Observação (opcional)</label>
+        <textarea id="sac-obs" rows="2" placeholder="Ex.: sem cebola, troco para R$ 50…"></textarea>
+      </div>
+
+      <p class="sacola__aviso" id="sacola-aviso-fechado" hidden></p>
+
+      <button class="btn btn--principal sacola__enviar" id="sacola-enviar" type="button">Pedir no WhatsApp</button>
+      <p class="sacola__nota">O atendente confirma o valor total e a taxa de entrega pelo WhatsApp.</p>
+    </div>
+  </div>
+</div>

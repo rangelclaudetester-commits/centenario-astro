@@ -1,0 +1,29 @@
+<section class="secao secao--cardapio" id="cardapio" aria-labelledby="t-cardapio">
+  <div class="wrap">
+    <h2 class="secao__titulo" id="t-cardapio">O cardápio de hoje</h2>
+    <p class="secao__intro">
+      Marmitas para retirar ou receber em casa. Toque no <b>+</b> para montar o pedido
+      e enviar pelo WhatsApp — já vai com nome, itens e forma de pagamento, é só combinar
+      o valor total e a taxa de entrega.
+    </p>
+
+    <div
+      id="cardapio-lista"
+      class="cardapio"
+      data-csv=""
+      data-csv-demo="/cardapio-exemplo.csv"
+      data-config-csv=""
+      data-config-demo="/config-exemplo.csv"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <p class="cardapio__vazio">Carregando o cardápio de hoje…</p>
+    </div>
+
+    <p class="cardapio__nota" id="cardapio-obs-entrega" hidden></p>
+    <p class="cardapio__aviso">
+      Tamanhos: <b>P 500&nbsp;ml</b> · <b>M 750&nbsp;ml</b> · <b>G 1.200&nbsp;ml</b> (serve 2 pessoas).
+      Preços por tamanho. A taxa de entrega e o total final são combinados no atendimento.
+    </p>
+  </div>
+</section>

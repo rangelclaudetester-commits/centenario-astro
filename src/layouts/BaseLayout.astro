@@ -1,0 +1,101 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL("/imagens/og-image.jpg", Astro.site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  name: "Restaurante & Grill Centenário",
+  image: ogImageURL.toString(),
+  url: Astro.site?.toString(),
+  telephone: "+555135598657",
+  servesCuisine: ["Brasileira", "Comida caseira", "Churrasco", "Frutos do mar"],
+  priceRange: "R$ 20–40",
+  currenciesAccepted: "BRL",
+  menu: `${Astro.site}#cardapio`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Rua Kraemer-Eck, 90",
+    addressLocality: "Sapiranga",
+    addressRegion: "RS",
+    postalCode: "93800-490",
+    addressCountry: "BR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -29.6311567,
+    longitude: -51.0127742,
+  },
+  hasMap:
+    "https://www.google.com/maps/search/?api=1&query=Restaurante%20%26%20Grill%20Centen%C3%A1rio%2C%20Rua%20Kraemer-Eck%2C%2090%2C%20Sapiranga%20-%20RS",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "11:00",
+      closes: "13:30",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/restaurantegrillcentenario/",
+    "https://www.facebook.com/restaurantegrillcentenario/",
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.6",
+    reviewCount: "347",
+    bestRating: "5",
+  },
+};
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#2A211C" />
+
+    <!-- Open Graph / compartilhamento -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Restaurante & Grill Centenário" />
+    <meta property="og:title" content="Restaurante & Grill Centenário — Sapiranga/RS" />
+    <meta
+      property="og:description"
+      content="Buffet livre e a quilo, comida caseira e grelhados há 17 anos. Segunda a sábado, 11h às 13h30. Marmitas pelo WhatsApp."
+    />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <slot />
+  </body>
+</html>

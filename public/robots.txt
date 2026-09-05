@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://restaurante-centenario.pages.dev/sitemap-index.xml
