@@ -98,16 +98,26 @@
 
   function pintarStatus(cfg) {
     var s = calcularStatus(cfg);
+    var agora = horaBrasilia();
     estadoAtual = s.estado;
     $$(".placa").forEach(function (placa) {
       placa.setAttribute("data-status", s.estado);
       var alvo = $(".placa__texto", placa);
       if (alvo) alvo.textContent = s.texto;
     });
-    // rótulo do botão de envio muda quando está fechado
+    // rótulo do botão de envio muda quando está fechado — usa o dia real da
+    // próxima abertura (nem sempre é "amanhã": sábado à noite, por exemplo,
+    // o próximo dia é segunda, já que domingo é fechado)
     var enviar = $("#sacola-enviar");
     var avisoFechado = $("#sacola-aviso-fechado");
-    if (enviar) enviar.textContent = s.estado === "fechado" ? "Enviar pedido para amanhã" : "Pedir no WhatsApp";
+    if (enviar) {
+      if (s.estado === "fechado") {
+        var proximoDia = proximaAbertura(agora).replace(/ às 11h$/, "");
+        enviar.textContent = "Enviar pedido para " + proximoDia;
+      } else {
+        enviar.textContent = "Pedir no WhatsApp";
+      }
+    }
     if (avisoFechado) {
       if (s.estado === "fechado") {
         avisoFechado.textContent = "O restaurante está fechado agora — seu pedido chega para o próximo dia de funcionamento.";
